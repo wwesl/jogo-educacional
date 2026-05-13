@@ -45,3 +45,9 @@ Crianças de 4 a 5 anos em fase de educação infantil.
 
 ##
 *Projeto desenvolvido por **Weslei Nascimento Rossinsky***
+
+| Nome | Função |
+|---|---|
+| Weslei Nascimento Rossinsky | Desenvolvimento |
+| Nome 2 | Design |
+| Nome 3 | Pesquisa |
