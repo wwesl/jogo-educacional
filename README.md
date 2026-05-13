@@ -1,1 +1,17 @@
-# aps-2026-jogo-educacional
+# Parceria Unifebe e Prefeitura de Brusque - Jogo Educacional
+
+-
+
+## Objetivo
+-
+
+## Tecnologias
+- HTML
+- CSS
+- JavaScript
+
+## Status do projeto
+🚧 Em desenvolvimento
+
+## Autor
+Projeto desenvolvido por Weslei Nascimento Rossinsky
