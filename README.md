@@ -34,9 +34,13 @@ Crianças de 4 a 5 anos em fase de educação infantil.
 
 ## 🔴 Tecnologias utilizadas
 
+### Desenvolvimento
 🔺 HTML  
 🔺 CSS  
 🔺 JavaScript  
+
+### Design
+🔺 Figma  
 
 ---
 
