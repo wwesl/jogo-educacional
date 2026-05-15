@@ -5,11 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo Educacional 2026 SI</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-    <h1>título temporário</h1>
+    <header>
+        <a href="/index.html" class="topbar-button">
+            <i class="fa-solid fa-house"></i>
+            INÍCIO
+        </a>
+        <a href="" class="topbar-button">
+            <i class="fa-regular fa-file-lines"></i>
+            CRÉDITOS
+        </a>
+    </header>
+
+    <main class="register">
+        <img src="assets/capybara.png" alt="capivara" style="
+            width: 7vw;
+            position: absolute;
+            left: 20%;
+            top: -50%;
+        ">
+
+        <form action="/submit" method="POST">
+        
+            <label for="">NOME</label>
+            <input type="text" id="f-nome" name="nome">
+            
+            <label for="">ESCOLA</label>
+            <input type="text" id="f-escola" name="escola">
+            
+            <label for="">IDADE</label>
+            <input type="password" id="password" name="password">
+            
+            <!-- <a href="/play.html" class="play-button" style="background-color: #222; color: #fff;">
+                <i class="fa-brands fa-redhat"></i>
+            </a> -->
+            <div></div>
+
+            <a href="/play.html" class="play-button" style="background-color: limegreen;">
+                JOGAR
+                <i class="fa-solid fa-circle-play" style="font-size: 1.2vw;"></i>
+            </a>
+        </form>
+    </main>
+
+    <footer>
+        <p>2026 Weslei N. Rossinsky</p>
+        <p>Projeto UNIFEBE & Prefeitura de Brusque</p>
+    </footer>
 </body>
 
 </html>
