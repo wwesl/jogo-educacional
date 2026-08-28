@@ -2,25 +2,15 @@
 
 Projeto desenvolvido por acadêmicos da UNIFEBE em parceria com a Prefeitura de Brusque como atividade de curricularização da extensão.
 
-O jogo educacional é voltado para crianças de 4 a 5 anos de idade, buscando apresentar e ensinar a hístoria e cultura de Brusque de forma divertida, interativa e acessível.
+O jogo educacional é voltado para crianças de 5 a 6 anos de idade, buscando estimular e acompanhar o desenvolvimento de diferentes habilidades de forma interativa e acessível.
 ##
 
 ## 🟢 Objetivo
-O objetivo do projeto é auxiliar no desenvolvimento infantil por meio da gamificação, utilizando atividades simples e intuitivas relacionadas à história de Brusque.
-
-O projeto busca estimular:
-
-- Coordenação motora;
-- Raciocínio lógico;
-- Atenção e memória;
-- Interação com tecnologia educacional;
-- Aprendizado sobre a história e cultura de Brusque.
-
-Além disso, o projeto aproxima a universidade da comunidade através da curricularização da extensão.
+O objetivo é estimular e acompanhar o desenvolvimento de diferentes habilidades, abordando conteúdos relacionados a Grandezas e Comparações, Noções Espaciais, Contagem e Quantidades, Cores, Animais e seus Habitats, Consciência Fonológica, Consciência Silábica, Letras e Palavras, Percepção Visual e Compreensão Auditiva, entre outros conteúdos adequados à etapa da Educação Infantil Pré-escola II.
 
 ## 🟡 Público-alvo
 
-Crianças de 4 a 5 anos em fase de educação infantil.
+Crianças de 5 a 6 anos em fase de educação infantil.
 
 ---
 

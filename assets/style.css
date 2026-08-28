@@ -3,14 +3,29 @@
     padding: 0;
     box-sizing: content-box;
 }
-html, body {height: 100%; }
+:root {
+    --color1: #c58e;
+    --dcolor1: #925f;
+    --fonttiny: 12px;
+    --fontsmall: 15px;
+    --fontbig: 20px;
+    --fontbigger: 35px;
+    --fonthuge: 50px;
+
+    --color-medio: #fc0;
+    --color-desafio: #a0c;
+
+    --max-width: 900px;
+}
+
+html, body {height: 100%;}
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1vw;
+    font-family: cursive;
+    font-size: var(--fontbig);
     
-    background: fixed center
-        radial-gradient(#fff5, #fff2),
-        url(https://upload.wikimedia.org/wikipedia/commons/8/83/Brusque1.jpg);
+    background:
+        fixed center
+        url(https://img.magnific.com/vetores-gratis/fronteira-de-jardim-de-infancia-brincalhao-com-rabiscos-de-lapis_107791-32012.jpg);
     background-size: cover;
 
     display: flex;
@@ -20,38 +35,37 @@ body {
 
 
 header {
-    height: 7vh;
+    height: 40px;
     width: 100vw;
-    background: fixed #070;
-    outline: solid #fff .75vh;
+    background: fixed var(--color1);
+    outline: solid #401 3px;
 
     display: flex;
     align-items: center;
-    gap: 2%;
 }
 .topbar-button {
     color: #fff;
-    font-size: 1.2vw;
+    margin: 15px;
     text-decoration: none;
+    transition: color .2s ease;
 }
 .topbar-button:hover {
-    color: #bbb;
-    /* font-size: 1.3vw; */
+    color: var(--dcolor1);
 }
 
 
-main {
+.register {
     position: relative;
     top: 30vh;
 
-    background: #fffe;
+    background: var(--color1);
     background-size: cover;
-    padding: 5vh 5vh;
-    border-radius: 10px;
+
+    padding: 40px 40px;
+    border-radius: 6px;
 }
 
 .play-button {
-    font-size: 1.2vw;
     border: 0;
     border-radius: 10px;
 
@@ -66,8 +80,8 @@ form {
     justify-content: center;
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 3vh 3vh 3vh 4vh;
-    gap: 5%;
+    grid-template-rows: 20px 20px 20px 25px;
+    gap: 10%;
 }
 
 
@@ -75,61 +89,127 @@ form {
     position: relative;
     top: 17vh;
 
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    font-size: 1.3vw;
+    font-size: var(--fontsmall);
     background: #fffe;
     background-size: cover;
-    padding: 8vh 8vh;
-    border-radius: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80vw;
+    max-width: var(--max-width);
+    min-height: 450px;
 
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 10%;
 }
 .question h2 {
     position: relative;
-    background: linear-gradient(-90deg, #fc0, #fc00);
+    grid-area: head;
+    width: 105%;
+    height: fit-content;
+    margin-top: 5%;
 }
-.question h2::first-letter { font-size: 4vw; }
+.question h2::first-letter { font-size: var(--fontbigger); }
 .question span {
     color: #fff;
-    background-color: #fc0;
     font-weight: bold;
-    font-size: 2vw;
-    border-radius: 10px;
+    font-size: var(--fontbigger);
+    border-radius: 3px;
 
     position: absolute;
     right: 0;
     top: 0;
 }
 .question div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3%;
+    position: relative;
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas:
+        "img ans1"
+        "img ans2"
+        "img ans3"
+        "img ans4";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 20% 20% 20%;
+    height: 70%;
+
+    font-size: var(--fontbigger);
 }
 .question a {
-    position: relative;
     text-decoration: none;
+    position: relative;
+    font-size: var(--fontbigger);
 }
 .question h3 {
+    position: relative;
     color: #efe;
-    background-color: #ea0;
-    border-radius: 12px;
+    border-radius: 4px;
+}
+.question img {
+    grid-area: img;
 }
 .audio-button {
-    height: 2.2vw;
-    width: 4vw;
-    font-size: 1.5vw;
-    border-radius: 14px;
+    height: 50px;
+    width: 50px;
+    font-size: var(--fontbigger);
+    border-radius: 8px;
     position: absolute;
-    top: .3vw;
-    right: .3vw;
+    top: 5%;
+    right: 5%;
     border: 0;
     color: #fff;
     background-color: #38f;
+}
+
+
+.level {
+    position: relative;
+    top: 30vh;
+
+    color: #000;
+    font-size: var(--fonthuge);
+    background: #fffe;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80vw;
+    max-width: var(--max-width);
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.level a, .level h3 {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    font-size: var(--fontbigger);
+    width: fit-content;
+    border-radius: 10px;
+}
+
+
+.palette-medio span{
+    background-color: var(--color-medio);
+}
+.palette-medio h2 {
+    background: linear-gradient(-90deg, var(--color-medio), #0000);
+}
+.palette-medio h3 {
+    background-color: color-mix(in srgb, var(--color-medio) 100%, #000 12%)
+}
+
+.palette-desafio span {
+    background-color: var(--color-desafio);
+}
+.palette-desafio h2 {
+    background: linear-gradient(-90deg, var(--color-desafio), #0000);
+}
+.palette-desafio h3 {
+    background-color: color-mix(in srgb, var(--color-desafio) 100%, #000 20%)
 }
 
 
@@ -138,19 +218,19 @@ footer {
     bottom: 1vh;
 
     color: #dde;
-    background: fixed #0003;
+    background: fixed #0006;
     padding: 0 1vw;
     border-radius: 6px;
 
-    font-size: .75vw;
+    font-size: var(--fonttiny);
     text-align: center;
 
     display: flex;
     flex-direction: row;
-    gap: .5vw;
+    gap: 10px;
 }
 footer p:not(:last-child)::after {
     content: "•";
-    margin-left: .5vw;
+    margin-left: 10px;
     opacity: 0.6;
 }
