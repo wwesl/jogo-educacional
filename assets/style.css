@@ -6,7 +6,7 @@
 :root {
     --color1: #c58e;
     --dcolor1: #925f;
-    --fonttiny: 12px;
+    --fonttiny: 13px;
     --fontsmall: 15px;
     --fontbig: 20px;
     --fontbigger: 35px;
@@ -222,6 +222,7 @@ footer {
     padding: 0 1vw;
     border-radius: 6px;
 
+    font-family: monospace;
     font-size: var(--fonttiny);
     text-align: center;
 
